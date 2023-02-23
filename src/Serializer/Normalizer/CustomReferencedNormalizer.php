@@ -38,7 +38,7 @@ class CustomReferencedNormalizer extends CustomNormalizer
     /**
      * {@inheritdoc}
      */
-    public function supportsNormalization($data, $format = null)
+    public function supportsNormalization(mixed $data, ?string $format = null): bool
     {
         return $data instanceof AbstractNormalizable;
     }
